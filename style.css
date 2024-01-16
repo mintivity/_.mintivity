@@ -1,0 +1,25 @@
+a {
+    color:green;
+    text-decoration: none;
+}  
+#grid ul {border-right: 2px solid black;
+    width: 100px;
+    margin: 0;
+    height: 100%;
+}
+li {padding: 10px; }
+#grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+}
+#sad{
+    padding-left:15px ;
+}
+ @MEDIA(MAX-WIDTH:800PX){
+    #grid{
+    display:block;
+    }
+    #grid ul {border-right:none}
+    h1{
+    border-bottom: none}
+ } 

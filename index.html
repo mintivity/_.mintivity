@@ -30,9 +30,19 @@ body{margin:0%}
 <li><a href="https://www.instagram.com/_.mintivity?igsh=bGdycXFuY3JxZGk1" target="blank"> 운동영상</a></li>
 <li><a href="운동정보.html" title="information"> 운동정보</a></li>
 <li><a href="https://www.instagram.com/_.min7_?igsh=N3VreWU5OWZkNm5y" target="blank" title="natural"> 본 계정</a></li>
-<li><a href="운동사진첩.html" title="Photo">운동사진첩</a></li>
+<li><a href="운동사진첩.html" target="_blank" title="Photo">운동사진첩</a></li>
 <li><input type="button" value="1RM 계산기" onclick="window.open('https://rst0070.github.io/1rm-tester/index.html')">
-<li><input type="button" value="오운완click" onclick="alert('오늘도 해냈다!')"> 
+<li><input type="button" value="오운완click" onclick="alert('오늘도 해냈다!')">
+ <li><input id="야간모드버튼" type="button" value="야간모드" onclick="
+        if(document.querySelector('#야간모드버튼').value === '야간모드'){
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color='white';
+            document.querySelector('#야간모드버튼').value ='주간모드';    
+        } else {
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        document.querySelector('#야간모드버튼').value='야간모드';
+        }">
 
 </ul>
 </div>
